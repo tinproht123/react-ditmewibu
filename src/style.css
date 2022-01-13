@@ -1,0 +1,55 @@
+h1,
+p {
+  font-family: Lato;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+ul {
+  list-style: none;
+}
+.quotes-item {
+  margin: 0.2rem 0;
+}
+.quotes-title {
+  border: 1px solid #c7c3c7;
+  padding: 0.6rem;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 0;
+}
+.quotes-title:hover,
+.quotes-title:focus {
+  background-color: #f1f1f1;
+}
+.quotes-title.open {
+  background-color: rgb(16, 107, 211);
+  color: #fff;
+  border-radius: 5px 5px 0 0;
+}
+.quotes-text {
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.5s cubic-bezier(0, 1, 0, 1);
+  margin: 0 1rem;
+}
+.quotes-text.open {
+  height: auto;
+  max-height: 9999px;
+  transition: all 0.5s cubic-bezier(1, 0, 1, 0);
+}
+.type-btn {
+  background-color: #222;
+  color: #fff;
+  border: none;
+  padding: 0.4rem;
+}
+.type-btn.open {
+  background-color: rgb(26, 98, 180);
+}
